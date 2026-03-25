@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.proto.tutorial.ProtoTutorial.Course;
 
 @RestController
-public class BasciController {
+public class BasicController {
     @Autowired
     CourseRepository courseRepository;
 
