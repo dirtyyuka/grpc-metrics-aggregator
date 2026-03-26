@@ -84,20 +84,6 @@ This repository includes a specialized JUnit sterss test that simulates a high-l
 ```java
 @Test
 void validate1000Pings_stressTest() throws InterruptedException {
-    StreamObserver<MetricResponse> responseObserver = new StreamObserver<>() {
-        public void onNext(MetricResponse value) {
-            System.out.println("response: " + value);
-        }
-
-        public void onError(Throwable t) {
-            t.printStackTrace();
-        }
-
-        public void onCompleted() {
-            System.out.println("Done");
-        }
-    };
-
     StreamObserver<PingMetric> requestObserver = stub.streamMetrics(responseObserver);
 
     ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
