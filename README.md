@@ -10,17 +10,6 @@
 ## Overview
 This project provides a high performance pipeline to ingest raw data from gRPC-enabled microservices and aggregate them into metrics.
 
-## Architecture
-```mermaid
-flowchart TD
-    A[Client StreamObserver] --> B[HTTP/2]
-    B --> C[gRPC port:9090]
-    C --> D[Server StreamObserver]
-    D --> C
-    C --> B
-    B --> A
-```
-
 ## Core features
 1. <b>Client-side Streaming</b>: Devices can setup a single persistent connection and fire metrics until done.
 
