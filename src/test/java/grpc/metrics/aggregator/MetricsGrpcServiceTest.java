@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import com.proto.tutorial.MetricsServiceGrpc;
 import com.proto.tutorial.Metrics.MetricResponse;
