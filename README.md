@@ -67,7 +67,7 @@ service MetricsService {
 }
 ```
 
-2. Run the test. This repository includes a specialized JUnit sterss test that simulates a high-load environment using ScheduledExecutorService.
+2. Run the test. This repository includes a specialized JUnit stress test that simulates a high-load environment using ScheduledExecutorService.
 
 ```java
 @Test
