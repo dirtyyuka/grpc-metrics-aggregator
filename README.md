@@ -26,7 +26,7 @@ The current architecture has been validated through testing to have:
 
 - <b>Efficiency</b>: Minimal memory usage due to having no massive object buffered.
 
-### Getting Started
+## Getting Started
 
 1. Define the contract
 ```proto
@@ -91,7 +91,7 @@ void validate1000Pings_stressTest() throws InterruptedException {
 }
 ```
 
-### Internal Logic
+## Internal Logic
 
 1. Client stub creates a proxy StreamObserver for communication
 
@@ -99,7 +99,7 @@ void validate1000Pings_stressTest() throws InterruptedException {
 
 3. Server handlers creates a listener for incoming data and passing it to server side stream observer.
 
-### Roadmap
+## Roadmap
 
 - Redis Integration: Remove in-memory counters and use redis streams for persistence
 
